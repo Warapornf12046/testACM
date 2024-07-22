@@ -198,7 +198,7 @@ body {
 
 .grid-home-body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0fr 0fr;
     grid-template-rows: 1fr;
     grid-template-areas:
         'a b'
@@ -234,9 +234,14 @@ body {
 .img-body {
     grid-area: b;
 }
+.food-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .food-home {
-    margin-left: -177px;
+    /* margin-left: -177px; */
     margin-top: 4px;
     height: 467px;
     width: 562px;
@@ -903,8 +908,236 @@ body {
     text-align: start;
 }
 
+/* phon down */
+@media only screen and (max-width: 600px){
+    .logo-sub {
+        display: flex;
+        margin: 26px auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    .hamburger {
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .nav-grid {
+        display: none;
+    }
 
 
+    .nav-grid.open {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        width: auto;
+    }
+
+    .grid-menu-nav {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+
+    }
+
+    .grid-menu-nav li {
+        margin-bottom: 24px;
+        width: 100%;
+
+    }
+
+    .menu {
+        display: grid;
+    }
+
+    .logo {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .logo-img {
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .logo-text {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .text-body p {
+        font-size: 25px;
+        margin-left: 16px;
+        text-align: center;
+    }
+
+    .grid-home-body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+
+    }
+
+    .text-body h2 {
+        text-align: center;
+        font-size: 76px;
+        margin-top: 0;
+        margin-left: -6px;
+    }
+
+    .food-home {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .bb-a {
+        margin-left: 20px;
+    }
+
+    .container {
+        background-size: cover;
+        /* Ensure it still covers the container on smaller screens */
+    }
+
+    /* menu */
+    .grid-menu-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 13px;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4 {
+        width: 99%;
+    }
+
+    /* howto */
+
+    .grid-ht {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 22px;
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .grid-ht-sub {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 22px;
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .ht-menu1,
+    .ht-menu2,
+    .ht-menu3,
+    .ht-menu4 {
+        display: block;
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .ht-menu1-1,
+    .ht-menu2-1,
+    .ht-menu3-1,
+    .ht-menu4-1 {
+        margin-bottom: 22px;
+        width: auto;
+        grid-gap: 7px;
+    }
+
+    .ingred-mn1,
+    .meth-mn1,
+    .ingred-mn2,
+    .meth-mn2,
+    .ingred-mn3,
+    .meth-mn3,
+    .ingred-mn4,
+    .meth-mn4 {
+        width: auto;
+        margin-bottom: 22px;
+        border: unset;
+    }
+
+    .img-menu1,
+    .img-menu2,
+    .img-menu3,
+    .img-menu4 {
+        width: auto;
+        height: auto;
+    }
+
+    .ingred-mn1 span,
+    .meth-mn1 span,
+    .ingred-mn2 span,
+    .meth-mn2 span,
+    .ingred-mn3 span,
+    .meth-mn3 span,
+    .ingred-mn4 span,
+    .meth-mn4 span {
+        display: block;
+
+        text-align: center;
+        margin-left: 0;
+    }
+
+
+    .ingred-mn1 li,
+    .meth-mn1 li,
+    .ingred-mn2 li,
+    .meth-mn2 li,
+    .ingred-mn3 li,
+    .meth-mn3 li,
+    .ingred-mn4 li,
+    .meth-mn4 li {
+        font-size: 20px;
+
+    }
+
+    .grid-me {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* tablet phone up */
+/* @media only screen and (min-width: 600px){
+    .grid-home-body{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid-home-body{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+    }
+} */
 
 /* 480px */
 @media (max-width: 480px) {
@@ -988,7 +1221,8 @@ body {
 
     .text-body p {
         font-size: 25px;
-        margin-left: 69px;
+        margin-left: 16px;
+        text-align: center;
     }
 
     .grid-home-body {
@@ -1002,15 +1236,14 @@ body {
 
     .text-body h2 {
         text-align: center;
-        font-size: 80px;
+        font-size: 76px;
         margin-top: 0;
-        margin-left: 10px;
-
+        margin-left: -6px;
     }
 
     .food-home {
-        width: 503px;
-        height: 235px;
+        width: 100%;
+        height: auto;
         text-align: center;
         margin-top: 8px;
     }
@@ -1201,8 +1434,8 @@ body {
     }
 
     .food-home {
-        width: 334px;
-        height: 206px;
+        width: 100%;
+        height: auto;
         text-align: center;
         margin-top: 8px;
 
