@@ -1759,8 +1759,9 @@ body {
     }
 
     .text-body p {
-        font-size: 23px;
-        margin-left: 24px;
+        font-size: 21px;
+        margin-left: 17px;
+        margin-right: 17px;
     }
 
     .grid-home-body {
@@ -1786,7 +1787,7 @@ body {
     }
 
     .food-home {
-        width: 100%;
+        width: 80%;
         height: auto;
         text-align: center;
         margin-top: 8px;
