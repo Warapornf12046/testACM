@@ -8,3 +8,5 @@ Visual Studio Code
  4. ในVisual Studio Code สามารถเปิดผ่าน extension ชื่อLive Server
 
 ## เว็บไซต์นี้มีความ responsive รองรับขนาดหน้าจอ max-width 415px 480px 540px 718px 1024px
+![Uploading image.png…]()
+
