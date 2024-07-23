@@ -1,11 +1,11 @@
 
-# แบบทดการพิจารณาฝึกงานของวราภรณ์ เวชประสิทธิ์
+# แบบทดสอบการพิจารณาฝึกงานของวราภรณ์ เวชประสิทธิ์
 # วิธีการเปิดงาน
  1. ดาวน์โหลดไฟล์zip
  2. แยกไฟล์zip
  3. นำโฟล์เดอร์ไปเปิดในโปรแกรมcode editor หรือ 
 Visual Studio Code
- 4. ในVisual Studio Code สามารถเปิดผ่าน extension ชื่อLive Server
+ 4. ในVisual Studio Code สามารถเปิดเว็บไซต์ผ่าน extension ชื่อLive Server
 
 ###  link figma 
 https://www.figma.com/design/ds0sy3417ALT9K6dXtZFCb/test-AQ?node-id=0-1&t=fvQczonjMflB8Qrt-1
